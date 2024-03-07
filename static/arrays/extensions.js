@@ -1,1 +1,1 @@
-export const extensions = ['webp', 'png', 'avif'];
+export const extensions = ['webp', 'avif'];
