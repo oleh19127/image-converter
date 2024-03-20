@@ -10,12 +10,14 @@ class GetImages {
   async fromSourceFolder() {
     return await globby(join(rootImagesFolder, sourceImagesFolder), {
       onlyFiles: true,
+      ignore: ['**/*.Identifier'],
     });
   }
 
   async fromConvertedFolder() {
     return await globby(join(rootImagesFolder, convertedImagesFolder), {
       onlyFiles: true,
+      ignore: ['**/*.Identifier'],
     });
   }
 }
